@@ -1,0 +1,20 @@
+header.wrapper.header#header
+    .container
+        .header__wrapper
+            a(href="#index").header__logo
+                +icon('logo')
+            .header__menu-wrapper
+                ul.header__menu
+                    - var list = ['Переглянути проекти','Подати проект','Допомога','Новини','Контакти']
+                    each listItem in list
+                        li.header__menu-item
+                            a(href="template/test.html").header__menu-link
+                                span= listItem   
+                .header__user-wrapper
+                    .header__user-image
+                        img(src="img/avatar.jpg" alt="avatar")
+                    a(href="#").header__user-name Ім'я користувача   
+                a(href="#").header__search
+                    +icon('search')    
+                a(href="#").header__mobile-menu.js-show-mobile-menu
+                    span

@@ -1,0 +1,175 @@
+.footer {
+    background: #374355;
+
+    &__copyright {
+        background: #3d4d65;
+        color: #adb9ca;
+        font-size: 11px;
+        font-family: $gothamProLight;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $screen-sm-max){
+            height: auto;
+            display: block;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        height: 95px;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: $screen-sm-max){
+            display: block;
+            height: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        @media (max-width: $screen-sm-max){
+            display: block;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &__menu-item {
+        &:not(:last-child) {
+            padding-right: 19px;
+            margin-right: 20px;
+            border-right: 1px solid #459ddd;
+            @media(max-width: $screen-md-max) {
+                padding-right: 10px;
+                margin-right: 10px;
+            }
+            @media (max-width: $screen-sm-max){
+                border: none;
+                margin-right: 0;
+                padding-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        @media (max-width: $screen-md-max) {
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: $screen-sm-max){
+            display: block;
+
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        font-family: $gothamProLight;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    &__lang {
+        width: 200px;
+        position: relative;
+        height: 38px;
+        flex-shrink: 0;
+
+        // &:hover {
+        //     .footer__lang-list {
+        //         display: block;
+        //     }
+        // }
+    }
+
+    &__lang-show-link {
+        background: #3d4d65;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 11px;
+        font-family: $gothamProLight;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #54657e;
+        border-radius: 3px;
+        color: #fff;
+        padding-left: 41px;
+        padding-top: 1px;
+        letter-spacing: 0.45px;
+
+        &:before {
+            content: '';
+            @include position(absolute, 50% null null 21px);
+            transform: translateY(-50%);
+            width: 16px;
+            height: 11px;
+        }
+
+        &:after {
+            content: '';
+            @include position(absolute, 50% 19px null null );
+            transform: translateY(-50%);
+            background: url("../img/svg/arrow-down.svg") no-repeat;
+            background-size: cover;
+            width: 8px;
+            height: 8px;
+            transition: .2s ease;
+        }
+
+        &--ukraine {
+            &:before {
+                background: url("../img/svg/ukraine.svg") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &.active{
+            &:after{
+                transform: translateY(-50%) rotateZ(180deg);
+            }
+        }
+    }
+
+    &__lang-list {
+        background: #3d4d65;
+        border: 1px solid #54657e;
+        border-radius: 3px;
+        @include position(absolute, null 0 0px 0 );
+        transform: translateY(100%);
+        list-style-type: none;
+        display: none;
+    }
+
+    &__lang-link {
+        color: #fff;
+        text-decoration: none;
+        // padding-left: 41px;
+        padding: 10px 41px;
+        display: block;
+        font-size: 11px;
+        font-family: $gothamProLight;
+        letter-spacing: 0.45px;
+
+        &--rus {
+            &:before {
+                content: '';
+                @include position(absolute, 50% null null 21px);
+                background: url("../img/svg/russia.svg") no-repeat;
+                background-size: contain;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 11px;
+            }
+        }
+    }
+}

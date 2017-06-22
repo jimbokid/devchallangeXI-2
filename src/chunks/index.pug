@@ -1,0 +1,176 @@
+.container
+    .main
+        .main__sidebar
+            a(href="#").main__sidebar-close-mobile
+            .main__sidebar-status
+                select.main__sidebar-select.js-select
+                    option(value="all" selected) Оберіть стан проекту...
+                    option(value="relizied") Реалізований
+                    option(value="cant") Неможливо реалізувати
+                    option(value="past") Брав участь
+                    option(value="canceled") Відхилений
+                    option(value="voted") Успішно пройшов оцінку
+                    
+                    option(value="viewed") На розгляді 
+                    option(value="winner") Переможець
+                    option(value="votenow") На голосуванні
+                    
+                    option(value="reliziednow") На реалізації 
+                    
+                    
+            .main__sidebar-title відображення результатів
+            .main__sidebar-wrapper
+                .main__sidebar-wrapper-title.js-open-filter.active
+                    .main__sidebar-left-wrapper
+                        .main__sidebar-icon
+                            +icon('list')
+                        .main__sidebar-name КатегорІї
+                        .main__sidebar-count 4
+                    .main__sidebar-arrow 
+                        +icon('arrow-down')
+                .main__sidebar-wrapper-body.js-category-list
+                    label.main__sidebar-item
+                        input(type="checkbox" value="sport").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Спорт 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="gospodarstvo").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Комунальне господарство 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="health").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Охорона здоров'я 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="road").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Дорожнє господарство  
+                    label.main__sidebar-item
+                        input(type="checkbox" value="nature").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Навколишнє середовище 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="education").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Освіта   
+                    label.main__sidebar-item
+                        input(type="checkbox" value="smi").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Засоби масової інформації 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="it").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Телекомунікації та ІТ     
+                    label.main__sidebar-item
+                        input(type="checkbox" value="social").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Соціальний захист 
+                    label.main__sidebar-item
+                        input(type="checkbox" value="transport").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Транспорт
+                    label.main__sidebar-item
+                        input(type="checkbox" value="velo").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Велоінфраструктура
+                    label.main__sidebar-item
+                        input(type="checkbox" value="poradok").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Громадський порядок
+                    label.main__sidebar-item
+                        input(type="checkbox" value="energy").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Енергозбереження
+                    label.main__sidebar-item
+                        input(type="checkbox" value="culture").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Культура та туризм
+            .main__sidebar-wrapper
+                .main__sidebar-wrapper-title.js-open-filter
+                    .main__sidebar-left-wrapper
+                        .main__sidebar-icon
+                            +icon('placeholder')
+                        .main__sidebar-name Місто \ Район
+
+                    .main__sidebar-arrow 
+                        +icon('arrow-down')
+                .main__sidebar-wrapper-body(style="display:none;")
+                    label.main__sidebar-item
+                        input(type="checkbox").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Київ 
+                    label.main__sidebar-item
+                        input(type="checkbox").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Львів
+                    label.main__sidebar-item
+                        input(type="checkbox").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Тернопіль
+                    label.main__sidebar-item
+                        input(type="checkbox").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Харків
+                    label.main__sidebar-item
+                        input(type="checkbox").main__sidebar-input
+                        span.main__sidebar-item-icon
+                            +icon('checked')   
+                        span.main__sidebar-item-name Одесса
+                                          
+            .main__sidebar-title Бюджет
+            .main__sidebar-price
+                .main__price-top
+                    input(type="text").main__price-input.js-min
+                    span.main__price-top-line
+                    input(type="text").main__price-input.js-max
+                    .main__price-value грн
+                    a(href="#").main__price-submit.js-show-price ok
+                .main__price-wrapper.js-price-slider
+            a(href="#").main__sidebar-reset Скинути всі фільтри
+        .main__body-wrapper
+            a(href="#").main__mobile-filter.js-mobile-filter
+                +icon('filter')
+            .main__body
+            .main__body-temp-wrapper(style="display:none")     
+                .main__item
+                    .main__item-wrapper
+                        .main__item-title
+                            .main__item-icon   
+                            .main__item-title-name
+                        .main__item-body
+                            .main__item-title-wrapper
+                                a(href="#").main__item-body-name.js-show-detail
+                                .main__item-body-status
+                            .main__item-body-period
+                            .main__item-body-preview
+                            .main__item-body-title Автор проекту    
+                            .main__item-body-author
+                                .main__item-body-author-icon
+                                .main__item-body-author-name
+                            .main__item-details
+                                .main__item-details-item 
+                                    .main__item-details-name бюджет
+                                    .main__item-details-value.main__item-details-value--price
+                                .main__item-details-item 
+                                    .main__item-details-name ПроголосувалО
+                                    .main__item-details-value.main__item-details-value--vote        
+            .main__body-btn
+                a(href="#").main__body-btn-link.js-show-more Завантажити більше проектів                    

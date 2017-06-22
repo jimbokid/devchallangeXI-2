@@ -1,0 +1,16 @@
+footer.footer#footer
+    .container
+        .footer__wrapper
+            .footer__menu-wrapper
+                ul.footer__menu
+                    - var footlist = ['Нормативно-правова база','Бланки для скачування','Інструкції','Iнформацiя для довiдок','Макети рекламних матерiалiв']
+                    each footitem in footlist
+                        li.footer__menu-item
+                            a(href="#").footer__menu-link= footitem 
+            .footer__lang
+                a(href="#").footer__lang-show-link.js-show-lang.footer__lang-show-link--ukraine Українська
+                ul.footer__lang-list
+                    li.footer__lang-item
+                        a(href="#").footer__lang-link.footer__lang-link--rus Русский
+    .footer__copyright.
+        © 2016 При використанні матеріалів посилання на сайт обов’язкове.        

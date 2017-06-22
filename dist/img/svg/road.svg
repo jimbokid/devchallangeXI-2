@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.95 495.95">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2 {
+            fill: #fff;
+                stroke: #fff;
+                stroke-miterlimit: 10;
+            }
+            .cls-1 {
+                stroke-width: 8px;
+            }
+            .cls-2 {
+                stroke-width: 6px;
+            }
+        </style>
+    </defs>
+    <title>road</title><path class="cls-1" d="M5.66,422.35l8.42,8.42L182.13,262.7a20.85,20.85,0,0,0,0-29.46l-38.48-38.48a9,9,0,0,1,0-12.63L311.71,14.07l-8.42-8.42L135.24,173.71a20.85,20.85,0,0,0,0,29.46l38.48,38.48a9,9,0,0,1,0,12.63Z"/><rect class="cls-1" x="176.12" y="332.8" width="84.18" height="8.93" transform="translate(-174.57 253.08) rotate(-45)"/><rect class="cls-1" x="235.65" y="154.21" width="84.18" height="8.93" transform="translate(-30.85 242.87) rotate(-45)"/><rect class="cls-2" x="354.7" y="35.16" width="84.18" height="8.93" transform="translate(88.2 292.18) rotate(-45)"/><path class="cls-1" d="M313.82,262.7l38.48,38.48a9,9,0,0,1,0,12.63L184.24,481.87l8.42,8.42L360.72,322.23a20.85,20.85,0,0,0,0-29.46l-38.48-38.48a9,9,0,0,1,0-12.63L490.29,73.6l-8.42-8.42L313.82,233.24A20.86,20.86,0,0,0,313.82,262.7Z"/></svg>

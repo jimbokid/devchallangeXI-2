@@ -1,0 +1,168 @@
+.detail
+    .container
+        .detail__wrapper-render
+        .detail__wrapper.detail__wrapper--temp
+            .detail__main-wrapper
+                .detail__title
+                    span.detail__title-name
+                    span.detail__status 
+                .detail__date 
+                .detail__short-detail
+                    .detail__short-detail-item
+                        .detail__short-detail-title Автор проекту
+                        .detail__short-detail-info.detail__short-detail-info--name
+                            .detail__short-detail-author-image
+                            .detail__short-detail-text 
+                    .detail__short-detail-item
+                        .detail__short-detail-title Категорія
+                        .detail__short-detail-info.detail__short-detail-info--category
+                            .detail__short-detail-author-image
+                            .detail__short-detail-text    
+                    .detail__short-detail-item
+                        .detail__short-detail-title Код
+                        .detail__short-detail-info.detail__short-detail-info--code
+                            .detail__short-detail-text 
+                .detail__project-wrapper
+                    .detail__project-tabs
+                        .detail__project-tabs-head
+                            a(href="#").detail__project-tabs-link.detail__project-tabs-link--info.active 
+                                span Інформація про проект
+                            a(href="#").detail__project-tabs-link.detail__project-tabs-link--time 
+                                span Таймлайн проекту
+                        .detail__project-tabs-body                
+                            .detail__project-tabs-body-title.project-title Короткий опис
+                            p.project-text
+                                
+                            .detail__project-tabs-detail        
+                                .detail__project-tabs-detail-item
+                                    .detail__project-tabs-item-title.project-title Місто
+                                    .detail__project-tabs-item-text.project-text.city 
+                                .detail__project-tabs-detail-item
+                                    .detail__project-tabs-item-title.project-title Адреса
+                                    .detail__project-tabs-item-text.project-text.adress 
+                                .detail__project-tabs-detail-item
+                                    .detail__project-tabs-item-title.project-title Район
+                                    .detail__project-tabs-item-text.project-text.region 
+                                .detail__project-tabs-detail-item
+                                    .detail__project-tabs-item-title.project-title Час на реалізацію           
+                                    .detail__project-tabs-item-text.project-text.time 
+                    .detail__project-budget
+                        .detail__project-budget-wrapper
+                            .detail__project-budget-title.project-title Бюджет на реалізацію         
+                            .detail__project-budget-text    
+                        a(href="#").detail__project-budget-detail Розрахунок бюджету    
+                    .detail__project-review
+                        .detail__project-review-title.project-title Опис    
+                        .detail__project-review-list
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Проблема
+                            //-     .detail__project-review-text.
+                            //-         Будь-якій розсудливій людині має бути зрозуміло, що хворий, що знаходиться в реанімації, як ніхто інший? Потребує психологічної підтримки близьких людей. Є величезна кількість прикладів,
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Рішення
+                            //-     .detail__project-review-text.
+                            //-         Користувач має право використовувати ресурс, розміщуючи на ньому файли (далі по тексту файли), які належать виключно йому. Дані Умови не пропонують Адміністрації ресурсу прав власності на файли, розміщені на ресурсі.
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Результат
+                            //-     .detail__project-review-text.
+                            //-         Користувач особисто повинен переконатися, що в його файлах немає шкідливих програм, вірусів, троянів, програм-шпигунів, хробаків інших зловредів або шкідливого коду.
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Для кого проект
+                            //-     .detail__project-review-text.
+                            //-         Cодержащие программы, перебирающие номера файлов или другим образом создающие высокую нагрузку на Ресурс, а также программы, которые могут нанести ущерб ресурсу и/или вызвать сбой технических или программных средств ресурса и/или иным образом нарушить его нормальную работу;содержащие программы, перебирающие номера.
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Основні етапи реалізації  
+                            //-     .detail__project-review-text.
+                            //-         Містять автоматизовані програми для збору інформації або взаємодії з сервісом.
+                            //- .detail__project-review-item
+                            //-     .detail__project-review-name Умови використання
+                            //-     .detail__project-review-text.
+                            //-         Умови використання
+                            //-         Всі суперечки, що виникли в зв'язку з даними Умовами та / або Політикою конфіденційності регулюються законодавством Мальти.               
+                    .detail__project-photos
+                        .detail__project-photos-title.project-title Фото / схеми / креслення / тощо
+                        .detail__project-photos-slider
+                            a(href="#").detail__project-btns.detail__project-btns--prev
+                                +icon('slider-left')
+                            a(href="#").detail__project-btns.detail__project-btns--next
+                                +icon('slider-right')
+                            .detail__project-photos-wrapper.js-project-slider 
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-1.jpg" alt="")
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-2.jpg" alt="")
+                                    //-                         
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-3.jpg" alt="")
+                                    //-                                     
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-4.jpg" alt="")
+                                    //-                                                 
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-5.jpg" alt="")
+                                    //-                                                             
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-3.jpg" alt="") 
+                                    //- .detail__project-photos-slide
+                                    //-     a(href="#").detail__project-photos-slide-link
+                                    //-         img(src="img/slider/slide-2.jpg" alt="")                         
+                    .detail__project-files        
+                        .detail__project-files-title.project-title Файли
+                        ul.detail__project-files-list
+                            //- li.detail__project-files-item
+                            //-     a(href="#").detail__project-files-link Форма проекту з додатком<span>.doc</span>
+                            //- li.detail__project-files-item
+                            //-     a(href="#").detail__project-files-link Картка оцінки проекту<span>.pdf</span>
+                            //- li.detail__project-files-item
+                            //-     a(href="#").detail__project-files-link Бланк для голосування (додаток 3 до положення про бюджет соціальних проектів)<span>.doc</span>        
+                    .detail__project-example
+                        .detail__project-example-title.project-title.
+                            приклади подібних рішень  
+                        a(href="#").detail__project-example-link          
+                    .detail__project-other-info
+                        .detail__project-other-info-title.project-title Обмеження та примітки
+                        .detail__project-other-info-list
+                            //- p.project-text.detail__project-other-text.
+                            //-     Будь-якій розсудливій людині має бути зрозуміло, що хворий, що знаходиться в реанімації, як ніхто інший потребує психологічної підтримки близьких людей. є величезну кількістьa прикладів,
+                            //- p.project-text.detail__project-other-text.
+                            //-     Коли тільки одна присутність поруч близької людини сприяло одужанню,надавало сили та було неможливо ні з якимисанітарними нормами психологічною допомогою. 
+            .detail__side-wrapper            
+                .detail__side-info
+                    .detail__side-top-item
+                        .detail__side-top-title людей підтримали проект                
+                        .detail__side-top-text.js-people 
+                    .detail__side-top-item.detail__side-top-item--bottom  
+                        .detail__side-top-title днів до закінчення голосування       
+                        .detail__side-top-text.js-deadline 
+                    .detail__side-vote
+                        .detail__side-vote-title Проголосувати    
+                        .detail__side-vote-form
+                            form
+                                input(type="email" placeholder="Введіть ваш email" required).detail__side-vote-input
+                                .detail__side-vote-helper.
+                                    На Ваш email буде відправлений 
+                                    лист,перейдіть за посиланням,
+                                    та проголосуйте.
+                                label.detail__sidebar-item
+                                    input(type="checkbox").detail__sidebar-input
+                                    span.detail__sidebar-item-icon
+                                        +icon('checked')   
+                                    span.detail__sidebar-item-name Повідомити мене про зміни в проекті.
+                                button(type="submit").detail__side-vote-submit Проголосувати         
+                .detail__side-socials
+                    .detail__side-socials-title Поділитися в мережі                
+                    .detail__side-socials-wrapper
+                        a(href="#" data-social="tw").detail__side-socials-link.detail__side-socials-link--twitter
+                            +icon('twitter')
+                        a(href="#" data-social="vk").detail__side-socials-link.detail__side-socials-link--vk
+                            +icon('vk')
+                        a(href="#" data-social="google").detail__side-socials-link.detail__side-socials-link--google
+                            +icon('google')
+                        a(href="#" data-social="fb").detail__side-socials-link.detail__side-socials-link--facebook
+                            +icon('facebook')
